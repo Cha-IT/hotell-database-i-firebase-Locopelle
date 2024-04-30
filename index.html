@@ -7,11 +7,40 @@
 </head>
 <body>
 
+<style>
+    .hotelRoomDiv {
+        border: 1px solid black;
+    }
+</style>
+
     <section>
 
         <div class="filter">
-            <button class="floor">Etasje 1</button>
+            <select name="Floor" id="FloorFilter">
+                <option value="none">Alle</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            Etasje
 
+            <select name="RoomType" id="TypeFilter">
+                <option value="none">Alle</option>
+                <option value="single">single rooms</option>
+                <option value="suite">Suites</option>
+            </select>
+            Type rom
+
+            <select name="Beds" id="BedsFilter">
+                <option value="none">Alle</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            Sengeplasser
+
+            <input type="checkbox" id="AvailableRoomFilter">
+            Ledig
+
+            <button id="ApplyFilters">Bruk Filter</button>
         </div>
 
         <div class="hotelRooms">
@@ -21,6 +50,6 @@
     </section>
     
     <script type="module" src="getrooms.js"></script>
-    <script type="module" src="addrooms.js"></script>
+<!--    <script type="module" src="addrooms.js"></script> -->
 </body>
 </html>
