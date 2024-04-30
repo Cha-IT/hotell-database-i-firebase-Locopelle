@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel rom</title>
+</head>
+<body>
+
+<style>
+    .hotelRoomDiv {
+        border: 1px solid black;
+    }
+</style>
+
+    <section>
+
+        <div class="filter">
+            <select name="Floor" id="FloorFilter">
+                <option value="none">Alle</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            Etasje
+
+            <select name="RoomType" id="TypeFilter">
+                <option value="none">Alle</option>
+                <option value="single">single rooms</option>
+                <option value="suite">Suites</option>
+            </select>
+            Type rom
+
+            <select name="Beds" id="BedsFilter">
+                <option value="none">Alle</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            Sengeplasser
+
+            <input type="checkbox" id="AvailableRoomFilter">
+            Ledig
+
+            <button id="ApplyFilters">Bruk Filter</button>
+        </div>
+
+        <div class="hotelRooms">
+
+        </div>
+
+    </section>
+    
+    <script type="module" src="getrooms.js"></script>
+<!--    <script type="module" src="addrooms.js"></script> -->
+</body>
+</html>
